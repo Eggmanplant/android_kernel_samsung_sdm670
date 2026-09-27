@@ -1,4 +1,4 @@
-name: Build Kernel (gts4lvwifi)
+name: Build Kernel (gts4lv)
 
 on:
   workflow_dispatch:
@@ -37,7 +37,7 @@ jobs:
           
           # Configuration name provided by you
           # Note: In this repo, it is located in the 'vendor/' subfolder
-          DEFCONFIG=gts4lvwifi_defconfig
+          DEFCONFIG=gts4lv_defconfig
           
           # 2. Initialize the .config file
           make -j$(nproc --all) O=out ARCH=arm64 \
